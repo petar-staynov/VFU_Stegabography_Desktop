@@ -16,7 +16,7 @@ It allows users to hide a secret message in a bitmap (.bmp) image. The message c
 ## How do I sue it?
 ### Hiding data:
 1. Download it from the [Releases page](https://github.com/petar-staynov/VFU_Stegabography_Desktop/releases) or compile it yourself with Visual Studio 2019
-2. Click "Browse" and open a .bmp image
+2. Click "Browse" and open a .bmp image. You can download an example file from [HERE](https://raw.githubusercontent.com/petar-staynov/VFU_Stegabography_Desktop/master/images/test_bitmap.bmp)
 3. Write the text you want to embed, in the input field. 
 4. Optionally you can encrypt it with a password by ticking the "Encrypt" box and writing a password in the "Encrypt password" field.
 5. Click Save to save the new file.
