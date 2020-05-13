@@ -10,7 +10,7 @@ It allows users to hide a secret message in a bitmap (.bmp) image. The message c
 3. Take a character from the user input message string and convert it to an 8-bit integer
 4. Hide 1 bit of this inetegr into every color channel for the next 3 pixels - R1, G1, B1, R2, G2, B2, R3, G3
 5. After processing the 8 bits of the character, move to the next one and repeat from step 3.
-6. To mark the end of the text, write 8 consecutive zeroes (in the next 24 pixels). This will be used when reading the message.
+6. To mark the end of the text, write 8 consecutive zeroes in the next bits. This will be used when reading the message.
 
 
 ## How do I sue it?
