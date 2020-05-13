@@ -13,6 +13,8 @@ It allows users to hide a secret message in a bitmap (.bmp) image. The message c
 6. To mark the end of the text, write 8 consecutive zeroes (in the next 24 pixels). This will be used when reading the message.
 
 ## Used resources:
-[Steganography-Simple-Implementation-in-Csharp]: https://www.codeproject.com/Tips/635715/Steganography-Simple-Implementation-in-Csharp
-[getting-started-with-steganography]: https://ourcodeworld.com/articles/read/474/getting-started-with-steganography-hide-information-on-images-with-c-sharp#disqus_thread
-[Secrets Hidden in Images (Steganography) - Computerphile Video]: https://www.youtube.com/watch?v=TWEXCYQKyDc
+[Hamzeh soboh (Codeproject) - Steganography Simple Implementation](https://www.codeproject.com/Tips/635715/Steganography-Simple-Implementation-in-Csharp)
+
+[Carlos Delgado (OurCodeWorld) - Getting Started With Steganography](https://ourcodeworld.com/articles/read/474/getting-started-with-steganography-hide-information-on-images-with-c-sharp#disqus_thread)
+
+[Computerphile (YouTube) - Secrets Hidden in Images (Steganography)](https://www.youtube.com/watch?v=TWEXCYQKyDc)
