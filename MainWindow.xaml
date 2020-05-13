@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VFU_Stegabography_Desktop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="320">
+        Title="MainWindow" Height="720" Width="320"
+        ResizeMode="NoResize">
     <Grid>
         <Button Content="Browse" Click="BrowseButtonHandler" Margin="4,3,252,0" VerticalAlignment="Top" Height="24"/>
         <Label Name="FilenameLabel" Content="File:" FontSize="16" Margin="72,-1,4,0" VerticalAlignment="Top"/>
@@ -17,7 +18,7 @@
         <CheckBox Name="EncryptIsChecked" Content="Encrypt message?" HorizontalAlignment="Left" Margin="4,558,0,0" VerticalAlignment="Top"/>
         <PasswordBox Name="EncryptPasswordInput" Margin="106,576,4,0" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="4,578,0,0" Text="Encrypt password: " TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button Content="Save new image as" Margin="104,607,0,0" VerticalAlignment="Top" Height="32" HorizontalAlignment="Left" Width="112"/>
+        <Button Click="SaveImageHandler" Content="Save new image with message" Margin="0,607,0,0" VerticalAlignment="Top" Height="32" HorizontalAlignment="Center" Width="180"/>
         <TextBlock HorizontalAlignment="Left" Margin="4,648,0,0" Text="Steganography app by Petar Staynov" FontSize="12" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
     </Grid>

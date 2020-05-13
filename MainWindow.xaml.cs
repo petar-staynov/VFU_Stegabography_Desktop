@@ -54,14 +54,15 @@ namespace VFU_Stegabography_Desktop
             //var bool2 = System.Windows.Forms.DialogResult.OK;
 
             /****** Upate filename in main window ********/
-            string imagePath = dlg.FileName;
-            FilenameLabel.Content = imagePath;
-            if (String.IsNullOrEmpty(imagePath))
+            string filename = dlg.SafeFileName;
+            FilenameLabel.Content = filename;
+            if (String.IsNullOrEmpty(filename))
             {
                 return;
             }
 
             /****** Load bitmap image ********/
+            string imagePath = dlg.FileName;
             if (this.DisplayImage.UriSource == null)
             {
                 this.DisplayImage.BeginInit();
@@ -94,9 +95,10 @@ namespace VFU_Stegabography_Desktop
 
             string extractedText = this.SteganographyHelper.ExtractText(nonIndexedBitmap);
 
-            if (string.IsNullOrEmpty(extractedText))
+            if (DecryptPasswordInput.Password.Length > 0)
             {
-                extractedText = "No text could be found in the image";
+                string password = DecryptPasswordInput.Password;
+                extractedText = this.CryptographyHelper.Decrypt(extractedText, password);
             }
 
             MessageInput.Text = extractedText;
