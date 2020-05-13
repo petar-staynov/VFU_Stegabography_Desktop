@@ -1,0 +1,24 @@
+﻿<Window x:Class="VFU_Stegabography_Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VFU_Stegabography_Desktop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="320">
+    <Grid>
+        <Button Content="Browse" Click="BrowseButtonHandler" Margin="4,3,252,0" VerticalAlignment="Top" Height="24"/>
+        <Label Name="FilenameLabel" Content="File:" FontSize="16" Margin="72,-1,4,0" VerticalAlignment="Top"/>
+        <Image Name="ImageDisplay" Margin="4,33,4,0" Height="310" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="4,351,0,0" Text="Decrypt password:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox Name="MessageInput" Margin="4,402,4,0" Text="Write message here..." TextWrapping="Wrap" VerticalAlignment="Top" Height="150"/>
+        <PasswordBox Name="DecryptPasswordInput" Margin="112,348,4,0" VerticalAlignment="Top"/>
+        <Button Content="Read Message" Click="DecryptButtonHandler" Margin="114,371,0,0" VerticalAlignment="Top" Height="24" HorizontalAlignment="Left" Width="92"/>
+        <CheckBox Name="EncryptIsChecked" Content="Encrypt message?" HorizontalAlignment="Left" Margin="4,558,0,0" VerticalAlignment="Top"/>
+        <PasswordBox Name="EncryptPasswordInput" Margin="106,576,4,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="4,578,0,0" Text="Encrypt password: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button Content="Save new image as" Margin="104,607,0,0" VerticalAlignment="Top" Height="32" HorizontalAlignment="Left" Width="112"/>
+        <TextBlock HorizontalAlignment="Left" Margin="4,648,0,0" Text="Steganography app by Petar Staynov" FontSize="12" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
