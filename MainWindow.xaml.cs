@@ -98,7 +98,14 @@ namespace VFU_Stegabography_Desktop
             if (DecryptPasswordInput.Password.Length > 0)
             {
                 string password = DecryptPasswordInput.Password;
-                extractedText = this.CryptographyHelper.Decrypt(extractedText, password);
+                try
+                {
+                    extractedText = this.CryptographyHelper.Decrypt(extractedText, password);
+                }
+                catch
+                {
+                    extractedText = "Wrong password";
+                }
             }
 
             MessageInput.Text = extractedText;
